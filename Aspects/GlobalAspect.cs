@@ -1,0 +1,3 @@
+﻿using Aspects;
+
+[assembly: LoggingAspect]
