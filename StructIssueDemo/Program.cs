@@ -4,8 +4,6 @@ using StructIssueDemo;
 
 namespace StructIssueDemo
 {
-
-
 	public struct TestStruct
 	{
 		public int N { get; set; }
@@ -18,8 +16,11 @@ namespace StructIssueDemo
 			var t = new TestStruct();
 			t.N = 12;
 
-			Console.WriteLine("Is the value actually in the autoprop of the struct?: " + t.N);
+			var x = t.N;
+
+			Console.WriteLine("Is the value actually readable from the autoprop of the struct?: " + x);
 			Console.ReadLine();
 		}
+
 	}
 }
